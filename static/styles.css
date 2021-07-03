@@ -1,0 +1,11 @@
+body {
+    text-align:center;
+    background-size: cover;
+    background-image: url('photos/geiranger.jpg');
+}
+
+.ola {
+    margin-top:15rem;
+    background-color:white;
+    display:inline-block;
+}

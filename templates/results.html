@@ -1,0 +1,18 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block styles %} <link href="{{url_for('static', filename='styles.css')}}" rel="stylesheet"> {% endblock %}
+
+{% block content %}
+<div class="ola">
+    <h1> The 10 most common colors of the image are </h1><br>
+    {% for hexcode in hexcodes:%}
+        <div class="hexcol" style="background-color:{{hexcode}}">
+            <h2>{{hexcode}}</h2>
+        </div>
+    {% endfor %}
+
+</div>
+
+
+{% endblock %}

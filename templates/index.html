@@ -1,0 +1,15 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block styles %} <link href="{{url_for('static', filename='styles.css')}}" rel="stylesheet"> {% endblock %}
+
+{% block content %}
+<div class="ola">
+    <h1> Color Palette generator from image </h1><br>
+
+    {{form.csrf_token}}
+    {{wtf.quick_form(form)}}
+</div>
+
+
+{% endblock %}
